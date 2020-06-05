@@ -17,5 +17,12 @@ namespace ConsoleEventsDemo
             //step 2 : invoking event -- Publisher
             evntWrapperforDelegate?.Invoke("This message from event argument which is using delegate as wrapper.");
         }
+
+      
+        public void OnDemoEventwithEventHandler()
+        {
+            //step 2 : invoking event -- Publisher
+            evntEventHandler?.Invoke(this, "string argument from OnDemoEventwithEventHandler");
+        }
     }
 }
